@@ -1,0 +1,161 @@
+.douban_container {
+  width: 100%;
+  height: 1200rpx;
+}
+
+.douban_top {
+  width: 100%;
+  height: 88rpx;
+  /* background-color: pink; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top_left {
+  color: #1bb61c;
+  width: 20%;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.top_middle {
+  width: 70%;
+}
+
+.top_right {
+  width: 10%；;
+}
+
+.top_middle input {
+  border: 1px solid gray;
+  width: 40%;
+  height: 66rpx;
+  border-radius: 33rpx;
+  text-indent: 50rpx;
+  background-color: #f7f7f7;
+}
+
+.top_right image {
+  width: 88rpx;
+  height: 88rpx;
+}
+
+.douban_app {
+  width: 100%;
+  height: 140rpx;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.app_left {
+  width: 10%;
+  height: 80rpx;
+  background-color: #1ec526;
+  color: white;
+  border-radius: 15rpx;
+  text-align: center;
+  font-size: 24px;
+  line-height: 80rpx;
+}
+
+.app_middle {
+  width: 50%;
+  /* border: 1px solid gray; */
+  height: 100rpx;
+}
+
+.app_right {
+  width: 25%;
+  height: 80rpx;
+  border-radius: 32rpx;
+  color: white;
+  background-color: #4ab659;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 16px;
+}
+
+.decord {
+  color: gray;
+}
+
+.douban_hostmovie {
+  width: 100%;
+  height: 495px;
+  /* border: 1px solid red; */
+}
+
+.hostmovie_top {
+  width: 100%;
+  height: 100rpx;
+  /* border: 1px solid gray; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.host_left {
+  width: 30%;
+  height: 100rpx;
+  font-size: 24px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.host_right {
+  width: 40%;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hostmovie_content {
+  width: 100%;
+  height: 800rpx;
+  /* background-color: pink; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.host_every {
+  width: 31%;
+  height: 440rpx;
+  /* border: 1px solid firebrick; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.image_details {
+  width: 100%;
+  height: 320rpx;
+}
+
+.image_details image {
+  width: 100%;
+  height: 320rpx;
+  border-radius: 15rpx;
+}
+
+.title_content {
+  width: 100%;
+  height: 30rpx;
+  /* font-size: 12px; */
+  line-height: 30rpx;
+  /* white-space: nowrap;
+  overflow:  hidden;
+  text-overflow:  ellipsis; */
+  overflow: hidden; /*内容超出宽度时隐藏超出部分的内容 */
+  text-overflow: ellipsis; /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+  white-space: nowrap; /*不换行 */
+}
+

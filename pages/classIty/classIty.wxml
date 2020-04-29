@@ -1,0 +1,104 @@
+<view class="douban_container">
+
+  <view class="douban_top">
+
+    <view class="top_left">豆瓣</view>
+    <view class="top_middle">
+      <input type="text" placeholder="搜索"></input>
+    </view>
+    <view class="top_right">
+      <image src="/image/top_right.png"></image>
+    </view>
+  </view>
+  <view class="douban_app">
+    <view class="app_left">
+
+      豆</view>
+
+    <view class="app_middle">
+      <view>
+        豆瓣App</view>
+      <view class="decord">
+        记录你的书影音生活</view>
+
+    </view>
+    <view class="app_right">
+      打开App
+    </view>
+
+
+  </view>
+  <view class="douban_hostmovie">
+    <view class="hostmovie_top">
+      <view class="host_left">豆瓣热门</view>
+      <view class="host_right">用App看更多500</view>
+    </view>
+
+    <view class="hostmovie_content">
+
+
+      <view class="host_every" wx:for="{{popularMovie}}" wx:key="{{index}}" bindtap="toDetails" data-index="{{item.id}}">
+        <view class="image_details">
+          <image src="{{item.images.large}}"></image>
+        </view>
+        <view class="title_content">{{item.title}}</view>
+        <view class="mark">评分: {{item.rating.average}}</view>
+        <!-- <view></view> -->
+
+      </view>
+
+
+
+    </view>
+  </view>
+
+<view class="douban_hostmovie">
+    <view class="hostmovie_top">
+      <view class="host_left">TOP250</view>
+      <view class="host_right">用App看更多9+</view>
+    </view>
+
+    <view class="hostmovie_content">
+
+
+      <view class="host_every" wx:for="{{list}}" wx:key="{{index}}" bindtap="toDetails" data-index="{{item.id}}">
+        <view class="image_details">
+          <image src="{{item.images.large}}"></image>
+        </view>
+        <view class="title_content">{{item.title}}</view>
+        <view class="mark">评分: {{item.rating.average}}</view>
+        <!-- <view></view> -->
+
+      </view>
+
+
+
+    </view>
+  </view>
+  <view class="douban_hostmovie">
+    <view class="hostmovie_top">
+      <view class="host_left">最近更新</view>
+      <view class="host_right">用App看更多9+</view>
+    </view>
+
+    <view class="hostmovie_content">
+
+
+      <view class="host_every" wx:for="{{recentUpdate}}" wx:key="{{index}}" bindtap="toDetails" data-index="{{item.id}}">
+        <view class="image_details">
+          <image src="{{item.images.large}}"></image>
+        </view>
+        <view class="title_content">{{item.title}}</view>
+        <view class="mark">评分: {{item.rating.average}}</view>
+        <!-- <view></view> -->
+
+      </view>
+
+
+
+    </view>
+  </view>
+
+
+
+</view>

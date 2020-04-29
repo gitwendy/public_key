@@ -1,0 +1,118 @@
+<!--pages/detail/detail.wxml-->
+<!-- <text>pages/detail/detail.wxml</text> -->
+<view class="details_container">
+
+  <view class="douban_top">
+
+    <view class="top_left">豆瓣</view>
+    <view class="top_middle">
+      <input type="text" placeholder="搜索"></input>
+    </view>
+    <view class="top_right">
+      <image src="/image/top_right.png"></image>
+    </view>
+  </view>
+  <view class="douban_app">
+    <view class="app_left">
+
+      豆</view>
+
+    <view class="app_middle">
+      <view>
+        豆瓣App</view>
+      <view class="decord">
+        记录你的书影音生活</view>
+
+    </view>
+    <view class="app_right">
+      打开App
+    </view>
+
+
+  </view>
+  <view class="details_content">
+    <!-- 电影 图片 -->
+    <view class="details_top">
+      <!-- 左边的图片 -->
+      <view class="left_image_details">
+        <image src="{{detailsData.images.large}}"></image>
+
+      </view>
+      <view class="right_details_content">
+        <!-- 电影名称 -->
+        <view class="movieName">
+          {{detailsData.title}}
+        </view>
+        <!-- //英文名 -->
+        <view class="EnglishName">{{detailsData.original_title}} ({{detailsData.year}})</view>
+        <!-- //剧情介绍 -->
+        <view class="movieType">
+          {{detailsData.countries[0]}} {{detailsData.geners}}</view>
+        <view class="look">
+          <view class="want_see">想看
+          </view>
+          <view class="have_seen">看过</view>
+        </view>
+      </view>
+
+    </view>
+    <view class="details_mark">
+      <view class="marl_left">
+        <view class="mark_tm">豆瓣评分 TM</view>
+        <view class="mark_details">
+          <view class="degree">{{detailsData.rating.average}}分</view>
+          <!-- <view class="degree of praise details">8.23098万</view> -->
+
+        </view>
+      </view>
+      <view class="mark_right">
+        <image src="/image/mark.png"></image>
+      </view>
+
+
+
+    </view>
+    <view class="canPlay">
+      <image src="/image/can_paly.png"></image>
+
+
+    </view>
+
+  </view>
+  <view class="synopsis_content">
+    <view>剧情简介</view>
+    <view class="synopsis_content_detail">
+      {{detailsData.summary}}
+    </view>
+  </view>
+  <view class="Director_content">
+    <view class="director">演职员</view>
+
+    <scroll-view class="scroll-view" scroll-x="{{true}}">
+
+      <view class="director_details" wx:for="{{detailsData.casts}}" wx:key="{{index}}">
+      <view>
+      <image src="{{item.avatars.large}}" class="image_large"></image>
+      </view>
+      <view>
+       {{item.name}}</view>
+      <view>演员</view>
+
+       
+
+      </view>
+
+
+
+
+
+    </scroll-view>
+  </view>
+  
+<view class="small_comment ">
+<view> 短评</view>
+<view class="small_conent"></view>
+</view>
+
+
+</view>
